@@ -75,7 +75,7 @@ def clawOnePage(_scholar_url, start=0):
         # print(bibTeX_url)
         resp_bibTeX = requests.get(bibTeX_url, headers=headers)
         bib_str = resp_bibTeX.text
-        print(bib_str)
+        # print(bib_str)
         paser = BibTexParser()
         paser.customization = convert_to_unicode
         bibdata = bp.loads(bib_str, parser=paser)
